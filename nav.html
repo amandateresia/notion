@@ -10,7 +10,7 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
 	<!-------->
 
@@ -24,7 +24,7 @@
 
 
 		.navMenu {
-			font-family: 'Advent Pro', sans-serif;
+			font-family: 'Open Sans', sans-serif;
 			padding: 8px;
 			text-align: center;
 			margin: 7px auto;
@@ -32,7 +32,7 @@
 		}
 
 		.navMenu a {
-			color: #272727;
+			color: #000000;
 			text-decoration: none;
 			text-transform: uppercase;
 			display: inline-block;
@@ -40,26 +40,26 @@
 		}
 
 		.background {
-			background-color: #ece5f0;
+			background-color: #c1d6c6;
 		}
 
 		.border {
-			border: 1px solid #cccccc;
+			border: 2px solid #ffffff;
 
 		}
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #88a68f;
 		}
 	</style>
 </head>
 
 <body>
 
-	<nav class="navMenu  border">
+	<nav class="navMenu  background">
 		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="morning" onclick="navigate(this.id)" href="#"> <i class="fa-thin fa-sun"></i> Morning</a>
+		<a id="routines" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-cloud-moon"></i> Routines</a>
 
 
 
@@ -68,7 +68,7 @@
 
 	<script>
 
-		let direction = "horizontal";
+		let direction = "vertical";
 		if (direction === "vertical") {
 			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
 		}
@@ -78,8 +78,8 @@
 
 			if (id == 'home')
 				window.open("https://home.com", '_blank').focus();
-			else if (id == 'morning')
-				window.open("https://morning.com", '_blank').focus();
+			else if (id == 'routines')
+				window.open("https://routines.com", '_blank').focus();
 
 		}
 	</script>
